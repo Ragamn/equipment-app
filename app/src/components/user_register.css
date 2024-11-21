@@ -1,0 +1,77 @@
+#student_register {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+#student_register .page_title {
+  font-size: 20px;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+#student_register .required_txt {
+  margin: 3% auto 1% 0;
+  color: red;
+}
+#student_register .error_message {
+  color: red;
+}
+#student_register .username_input,
+#student_register .email_input,
+#student_register .pass_input,
+#student_register .passch_input {
+  margin-top: 3%;
+  margin-bottom: 6%;
+}
+#student_register .username_input_text,
+#student_register .email_input_text,
+#student_register .pass_input_text,
+#student_register .passch_input_text {
+  width: 75%;
+}
+#student_register .curse_input_text,
+#student_register .school_year_input_text {
+  width: 41%;
+}
+#student_register .curse_input,
+#student_register .school_year_input {
+  margin-top: 20px;
+}
+#student_register .MuiButton-root.register_button {
+  margin-top: 15%;
+  width: 25%;
+  background-color: #00d12e;
+}
+#student_register .MuiButton-root.register_button:hover {
+  background-color: #00d12e;
+}
+.popup {
+  text-align: center;
+  color: black;
+}
+.log_title {
+  text-align: center;
+}
+#alert-dialog-slide-description {
+  font-size: 20px;
+  font-weight: bold;
+}
+.log_value {
+  font-size: 25px;
+}
+.MuiDialogActions-root .popup_button {
+  display: flex;
+  justify-content: center;
+}
+.MuiButton-root.popup_return_button {
+  margin-right: 10%;
+  background-color: #000000;
+}
+.MuiButton-root.popup_return_button:hover {
+  background-color: #000000;
+}
+.MuiButton-root.popup_register_button {
+  margin-left: 10%;
+  background-color: #00d12e;
+}
+.MuiButton-root.popup_register_button:hover {
+  background-color: #00d12e;
+}

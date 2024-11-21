@@ -1,0 +1,87 @@
+#header h1,
+#header p {
+  font-family: "Roboto", sans-serif;
+}
+
+#header .toolbar {
+  border-bottom: 3px solid;
+  border-color: #627cff;
+  height: 64px;
+  justify-content: space-between;
+}
+
+#header .header_title {
+  font-size: 28px;
+  font-weight: bolder;
+}
+#header .history,
+#header .equipment_management,
+#header .student_management,
+#header .teacher_management,
+#header .invetory_management,
+#header .category_management,
+#header .logout {
+  display: flex;
+  flex-direction: column;
+}
+
+#header .icon {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+#header .header_text {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media (min-width: 1026px) {
+  #header #long-button {
+    display: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  #header .history,
+  #header .equipment_management,
+  #header .student_management,
+  #header .teacher_management,
+  #header .invetory_management,
+  #header .category_management,
+  #header .logout {
+    display: none;
+  }
+  #header .hamburger {
+    width: 40px;
+    height: 32px;
+    position: relative;
+  }
+
+  #header .hamburger_icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: #000;
+  }
+
+  #header .hamburger_icon span:nth-child(1) {
+    top: 0;
+  }
+
+  #header .hamburger_icon span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #header .hamburger_icon span:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  #header .menu_text {
+    font-size: 16px;
+  }
+}
