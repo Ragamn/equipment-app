@@ -88,7 +88,7 @@ function ProductList() {
     const fetchEquipment = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/equipment/",
+          "https://equipment-management-system-ibks.onrender.com/api/equipment/",
           {
             method: "GET",
             headers: {

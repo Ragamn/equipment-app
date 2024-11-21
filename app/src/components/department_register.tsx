@@ -45,7 +45,7 @@ function DepartmentRegister() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://mysite-mczi.onrender.com/api/department/",
+        "https://equipment-management-system-ibks.onrender.com/api/department/",
         {
           method: "POST",
           headers: {

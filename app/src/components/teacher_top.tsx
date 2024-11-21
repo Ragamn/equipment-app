@@ -69,7 +69,7 @@ function TeacherTop() {
     const fetchHistory = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/history/",
+          "https://equipment-management-system-ibks.onrender.com/api/history/",
           {
             method: "GET",
             headers: {

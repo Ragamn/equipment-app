@@ -39,11 +39,11 @@ function InventoryHistory() {
 
   useEffect(() => {
     const fetchInventory = fetch(
-      "https://mysite-mczi.onrender.com/api/inventory/"
+      "https://equipment-management-system-ibks.onrender.com/api/inventory/"
     ).then((response) => response.json());
 
     const fetchInventoryList = fetch(
-      "https://mysite-mczi.onrender.com/api/inventory_lists/"
+      "https://equipment-management-system-ibks.onrender.com/api/inventory_lists/"
     ).then((response) => response.json());
 
     Promise.all([fetchInventory, fetchInventoryList])

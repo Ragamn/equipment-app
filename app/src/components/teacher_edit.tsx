@@ -23,7 +23,7 @@ function TeacherEdit() {
   const fetchTeacherData = async (id: string) => {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/teacher/${id}/`
+        `https://equipment-management-system-ibks.onrender.com/api/teacher/${id}/`
       );
       if (response.ok) {
         const data = await response.json();
@@ -40,7 +40,7 @@ function TeacherEdit() {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/teacher/${teacherId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/teacher/${teacherId}/`,
         {
           method: "DELETE",
         }
@@ -69,7 +69,7 @@ function TeacherEdit() {
     e.preventDefault();
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/teacher/${teacherId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/teacher/${teacherId}/`,
         {
           method: "PUT",
           headers: {

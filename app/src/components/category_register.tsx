@@ -34,7 +34,7 @@ function CategoryRegister() {
 
     try {
       const response = await fetch(
-        "https://mysite-mczi.onrender.com/api/category/",
+        "https://equipment-management-system-ibks.onrender.com/api/category/",
         {
           method: "POST",
           headers: {

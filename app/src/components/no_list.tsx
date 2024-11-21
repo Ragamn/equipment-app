@@ -42,7 +42,7 @@ const NoList = () => {
     const fetch_equipment_id = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/equipment/",
+          "https://equipment-management-system-ibks.onrender.com/api/equipment/",
           {
             method: "GET",
             headers: {
@@ -81,7 +81,7 @@ const NoList = () => {
         const missingDetails = await Promise.all(
           missingIds.map(async (id) => {
             const response = await fetch(
-              `https://mysite-mczi.onrender.com/api/equipment/${id}/`,
+              `https://equipment-management-system-ibks.onrender.com/api/equipment/${id}/`,
               {
                 method: "GET",
                 headers: {
@@ -117,7 +117,7 @@ const NoList = () => {
     const userId = getUserIdFromToken();
     try {
       const response = await fetch(
-        "https://mysite-mczi.onrender.com/api/equipment/",
+        "https://equipment-management-system-ibks.onrender.com/api/equipment/",
         {
           method: "PUT",
           headers: {
@@ -135,7 +135,7 @@ const NoList = () => {
 
       // 新しいfetchリクエスト
       const inventoryResponse = await fetch(
-        "https://mysite-mczi.onrender.com/api/inventory/",
+        "https://equipment-management-system-ibks.onrender.com/api/inventory/",
         {
           method: "POST",
           headers: {
@@ -151,7 +151,7 @@ const NoList = () => {
       if (rows.length > 0) {
         // 今日の日付と同じカラムのidを取得するfetchリクエスト
         const inventoryByDayResponse = await fetch(
-          "https://mysite-mczi.onrender.com/api/inventory/",
+          "https://equipment-management-system-ibks.onrender.com/api/inventory/",
           {
             method: "GET",
             headers: {
@@ -170,7 +170,7 @@ const NoList = () => {
         console.log("Rows:", rows);
 
         const inventoryListsResponse = await fetch(
-          "https://mysite-mczi.onrender.com/api/inventory_lists/",
+          "https://equipment-management-system-ibks.onrender.com/api/inventory_lists/",
           {
             method: "POST",
             headers: {

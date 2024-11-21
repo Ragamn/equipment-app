@@ -57,7 +57,7 @@ function UserTop() {
 
       try {
         const response = await fetch(
-          `https://mysite-mczi.onrender.com/api/user_top/${userId}/`,
+          `https://equipment-management-system-ibks.onrender.com/api/user_top/${userId}/`,
           {
             method: "GET",
             headers: {

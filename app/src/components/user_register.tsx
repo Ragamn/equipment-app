@@ -60,7 +60,7 @@ function UserRegister() {
     const fetchDepartments = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/department/",
+          "https://equipment-management-system-ibks.onrender.com/api/department/",
           {
             method: "GET",
             headers: {
@@ -153,7 +153,7 @@ function UserRegister() {
   ): Promise<void> {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/student/`,
+        `https://equipment-management-system-ibks.onrender.com/api/student/`,
         {
           method: "POST",
           headers: {

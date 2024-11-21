@@ -27,7 +27,7 @@ const EquipmentRegister = () => {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/category/",
+          "https://equipment-management-system-ibks.onrender.com/api/category/",
           {
             method: "GET",
             headers: {
@@ -61,7 +61,7 @@ const EquipmentRegister = () => {
   };
 
   const fetchBookName = async (isbn: number) => {
-    const url = `https://mysite-mczi.onrender.com/api/book/${isbn}/`;
+    const url = `https://equipment-management-system-ibks.onrender.com/api/book/${isbn}/`;
 
     try {
       const response = await fetch(url);
@@ -119,7 +119,7 @@ const EquipmentRegister = () => {
 
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/equipment/",
+          "https://equipment-management-system-ibks.onrender.com/api/equipment/",
           {
             method: "POST",
             headers: {
@@ -150,7 +150,7 @@ const EquipmentRegister = () => {
       try {
         console.log(categories_id, name, deadline);
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/equipment/",
+          "https://equipment-management-system-ibks.onrender.com/api/equipment/",
           {
             method: "POST",
             headers: {

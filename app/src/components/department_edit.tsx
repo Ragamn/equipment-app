@@ -32,7 +32,7 @@ const DepartmentEdit = () => {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/department/${departmentId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/department/${departmentId}/`,
         {
           method: "DELETE",
         }
@@ -52,7 +52,7 @@ const DepartmentEdit = () => {
     event.preventDefault();
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/department/${departmentId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/department/${departmentId}/`,
         {
           method: "PUT",
           headers: {

@@ -34,7 +34,7 @@ function ReturnApproval() {
 
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/loan_approval/?id=${id}`,
+        `https://equipment-management-system-ibks.onrender.com/api/loan_approval/?id=${id}`,
         {
           method: "GET",
           headers: {
@@ -95,7 +95,7 @@ function ReturnApproval() {
 
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/application/${applicationId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/application/${applicationId}/`,
         {
           method: "PUT",
           headers: {

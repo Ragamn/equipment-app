@@ -29,7 +29,7 @@ const CategoryList = () => {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/category/",
+          "https://equipment-management-system-ibks.onrender.com/api/category/",
           {
             method: "GET",
             headers: {

@@ -43,7 +43,7 @@ function StudentEdit() {
   const fetchStudentData = async (id: string) => {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/student/${id}/`
+        `https://equipment-management-system-ibks.onrender.com/api/student/${id}/`
       );
       if (response.ok) {
         const data = await response.json();
@@ -61,7 +61,7 @@ function StudentEdit() {
   const fetchCourses = async () => {
     try {
       const response = await fetch(
-        "https://mysite-mczi.onrender.com/api/department/"
+        "https://equipment-management-system-ibks.onrender.com/api/department/"
       );
       if (response.ok) {
         const data: Course[] = await response.json();
@@ -79,7 +79,7 @@ function StudentEdit() {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/teacher/${studentId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/teacher/${studentId}/`,
         {
           method: "DELETE",
         }
@@ -112,7 +112,7 @@ function StudentEdit() {
     if (e) e.preventDefault();
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/student/${studentId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/student/${studentId}/`,
         {
           method: "PUT",
           headers: {

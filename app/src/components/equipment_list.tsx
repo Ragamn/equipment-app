@@ -68,7 +68,7 @@ function EquipmentList() {
     const fetchEquipment = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/equipment/",
+          "https://equipment-management-system-ibks.onrender.com/api/equipment/",
           {
             method: "GET",
             headers: {
@@ -94,7 +94,7 @@ function EquipmentList() {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/category/",
+          "https://equipment-management-system-ibks.onrender.com/api/category/",
           {
             method: "GET",
             headers: {
@@ -204,7 +204,7 @@ function EquipmentList() {
 
   const qrRegister = async () => {
     try {
-      const response = await fetch("https://mysite-mczi.onrender.com/api/qr/", {
+      const response = await fetch("https://equipment-management-system-ibks.onrender.com/api/qr/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

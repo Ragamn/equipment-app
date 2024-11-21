@@ -23,7 +23,7 @@ const CategoryEdit = () => {
   const handleSubmit = async () => {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/category/${categoryId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/category/${categoryId}/`,
         {
           method: "PUT",
           headers: {

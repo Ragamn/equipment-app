@@ -61,7 +61,7 @@ const EquipmentEdit = () => {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/category/",
+          "https://equipment-management-system-ibks.onrender.com/api/category/",
           {
             method: "GET",
             headers: {
@@ -111,7 +111,7 @@ const EquipmentEdit = () => {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/equipment/${equipmentId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/equipment/${equipmentId}/`,
         {
           method: "DELETE",
         }
@@ -152,7 +152,7 @@ const EquipmentEdit = () => {
       console.log("Sending request with body:", requestBody);
 
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/equipment/${equipmentId}/`,
+        `https://equipment-management-system-ibks.onrender.com/api/equipment/${equipmentId}/`,
         {
           method: "PUT",
           headers: {

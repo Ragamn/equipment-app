@@ -30,7 +30,7 @@ const handleLendingRequest = async () => {
   console.log("qrResult:", qrResult);
   try {
     const response = await fetch(
-      "https://mysite-mczi.onrender.com/api/application/",
+      "https://equipment-management-system-ibks.onrender.com/api/application/",
       {
         method: "POST",
         headers: {
@@ -76,7 +76,7 @@ function ReturnRequest() {
         const productDetails = await Promise.all(
           qrResult.map(async (id: number) => {
             const response = await fetch(
-              `https://mysite-mczi.onrender.com/api/equipment/${id}/`
+              `https://equipment-management-system-ibks.onrender.com/api/equipment/${id}/`
             );
             if (!response.ok) {
               throw new Error(`Failed to fetch product with ID ${id}`);

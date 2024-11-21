@@ -49,7 +49,7 @@ function StudentList() {
     const fetchStudentsAndCourses = async () => {
       try {
         const response = await fetch(
-          "https://mysite-mczi.onrender.com/api/student/"
+          "https://equipment-management-system-ibks.onrender.com/api/student/"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch students");
@@ -58,7 +58,7 @@ function StudentList() {
 
         // コース情報を取得
         const coursesResponse = await fetch(
-          "https://mysite-mczi.onrender.com/api/department/"
+          "https://equipment-management-system-ibks.onrender.com/api/department/"
         );
         if (!coursesResponse.ok) {
           throw new Error("Failed to fetch courses");

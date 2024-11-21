@@ -50,7 +50,7 @@ const Login: React.FC = () => {
 
     try {
       const response = await fetch(
-        "https://mysite-mczi.onrender.com/api/user/login/",
+        "https://equipment-management-system-ibks.onrender.com/api/user/login/",
         {
           method: "POST",
           headers: {

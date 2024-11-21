@@ -29,7 +29,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
         try {
           const userId = jwtDecode<JwtPayload & { user_id?: string }>(token);
           const response = await fetch(
-            `https://mysite-mczi.onrender.com/api/teacher/${userId}`,
+            `https://equipment-management-system-ibks.onrender.com/api/teacher/${userId}`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,

@@ -81,7 +81,7 @@ function TeacherRegister() {
   ): Promise<void> {
     try {
       const response = await fetch(
-        `https://mysite-mczi.onrender.com/api/teacher/`,
+        `https://equipment-management-system-ibks.onrender.com/api/teacher/`,
         {
           method: "POST",
           headers: {
